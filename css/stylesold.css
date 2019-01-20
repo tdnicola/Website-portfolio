@@ -53,11 +53,11 @@ button,
      transition-duration: .2s;
     transition-property: opacity; */
     transition: .2s opacity;
-   
+
 }
 
 /*  opacity on resume not changing */
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
@@ -86,7 +86,7 @@ button:focus,
 .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
-} 
+}
 .navigation-list {
     list-style-type: none;
 }
@@ -174,7 +174,7 @@ nav {
     grid-column: auto / auto;
     grid-row: auto / auto;
     }
-  
+
   h1 {
     font-size: 24px;
   }
