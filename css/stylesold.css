@@ -1,59 +1,66 @@
 :root {
-    --primary-color: #b4b0b0;
-    --secondary-color: black;
-    --brown: #7c5b5b;
-    }
+  --primary-color: #b4b0b0;
+  --secondary-color: black;
+  --brown: #7c5b5b;
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    background-color: #b4b0b0;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    text-align: center;
-    margin: 0 auto;
+  background-color: #b4b0b0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
 }
+
 a {
-    color: black;
-      }
-a:visited {
-    /* visited link*/
-    color: black;
+  color: black;
 }
-a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
+
+a:hover,
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
 a:active {
-    /* selected link */
-    color: #3e6655;
+  /* selected link */
+  color: #3e6655;
 }
 
 button,
 .button {
-    /* overwrites the browser defaults and resets the border */
-    border: none;
-    width: 15%;
-    display: block;
-    margin: 0 auto;
-    /*take font from outside?  */
-    font-family: inherit;
-    /* styling the button */
-    background-color: #7c5b5b;
-    color: white;
-    font-size: 16px;
-   /* text decoration? */
-   text-decoration: none;
-   /*button spacing*/
-   padding: 10px;
-   border-radius: 3px;
-    /*width of the border, type and color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    /* Long version of transition
-     transition-duration: .2s;
-    transition-property: opacity; */
-    transition: .2s opacity;
+  /* overwrites the browser defaults and resets the border */
+  border: none;
+  width: 15%;
+  display: block;
+  margin: 0 auto;
 
+  /* take font from outside?  */
+  font-family: inherit;
+
+  /* styling the button */
+  background-color: #7c5b5b;
+  color: white;
+  font-size: 16px;
+
+  /* text decoration? */
+  text-decoration: none;
+
+  /* button spacing */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* width of the border, type and color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  /* Long version of transition
+   transition-duration: .2s;
+  transition-property: opacity; */
+  transition: 0.2s opacity;
 }
 
 /*  opacity on resume not changing */
@@ -61,119 +68,131 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    /*curser to pointer*/
-    cursor: pointer;
-    opacity: .8;
+  /* curser to pointer */
+
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /*  page header */
 .page-header {
-    display: flex;
-    /* width: 100%; */
-    padding: 20px;
+  display: flex;
+
+  /* width: 100%; */
+  padding: 20px;
 }
 
 .page-header__item {
-    flex: 0 1 150px;
- }
- .logo {
-     width: 150px;
-     height: 150px;
-     margin-left: 150px;
- }
+  flex: 0 1 150px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-left: 150px;
+}
 
 /* not recognizing last child command */
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
+
 .navigation-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 /* PROFILE */
 .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
 .profile {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*  Profile footer flexbox */
 .profile_footer {
- clear: both;
-display: flex;
-align-items: center;
-justify-content: center;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile_footer__item {
-padding: 5px;
-margin: 5px;
-grid-gap: 5px;
-
+  padding: 5px;
+  margin: 5px;
+  grid-gap: 5px;
 }
+
 /* About me page */
 .about__table {
-    margin: 0 auto;
-    padding-bottom: 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /*  contact form */
 .contact__me {
-    text-align: center;
+  text-align: center;
 }
+
 /* #contact-form {
     display: inline-block;
     margin: auto;
    } */
 
 form {
-    padding: 5px;
+  padding: 5px;
 }
+
 h1 {
-    text-align: center;
+  text-align: center;
 }
+
 nav {
-    width: 80%;
+  width: 80%;
 }
-/*  Grid work page */
+
+/* Grid work page */
+
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
+
 .grid__item {
-    background: #ecd9c6;
-    padding: 5px;
-    width: auto;
+  background: #ecd9c6;
+  padding: 5px;
+  width: auto;
 }
+
 .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
 }
+
 /*  screen sice responsiveness 3 grids to 1 at 500px */
 @media all and (max-width: 500px) {
-    .grid {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    }
+  }
 
-    .grid__item:last-child {
+  .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-    }
+  }
 
   h1 {
     font-size: 24px;
@@ -181,102 +200,114 @@ nav {
 }
 
 .berlin-illustration {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*  animation css */
 
 @keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f55b1f;
-    }
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f55b1f;
+  }
 }
+
 @keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(250px, 50px);
-    }
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(250px, 50px);
+  }
 }
+
 @keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
+
 .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
+
 .cloud-back {
-    animation-duration: 25s;
-    animation-name: cloud-move-reverse;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 25s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 /*  nav animations */
 div.container {
-    margin: 0 auto;
-	padding: 5em 3em;
-	text-align: center;
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
 }
 
 div.container a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font: 20px roboto;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font: 20px roboto;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 
 /* Top and Bottom borders go out */
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: rgb(0, 0, 0);
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+
+div.topBotomBordersOut a: before,
+div.topBotomBordersOut a: after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-div.topBotomBordersOut a:before {
-    top: 0px;
-    transform: translateY(10px);
+div.topBotomBordersOut a: before {
+  top: 0;
+  transform: translateY(10px);
 }
 
-div.topBotomBordersOut a:after {
-    bottom: 0px;
-    transform: translateY(-10px);
+div.topBotomBordersOut a: after {
+  bottom: 0;
+  transform: translateY(-10px);
 }
 
-div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
+div.topBotomBordersOut a:hover: before
+div.topBotomBordersOut a:hover: after {
+  opacity: 1;
+  transform: translateY(0);
 }
