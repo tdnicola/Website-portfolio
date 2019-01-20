@@ -284,8 +284,8 @@ div.container a {
 
 /* Top and Bottom borders go out */
 
-div.topBotomBordersOut a: before,
-div.topBotomBordersOut a: after {
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
   position: absolute;
   left: 0;
   width: 100%;
@@ -296,18 +296,18 @@ div.topBotomBordersOut a: after {
   transition: all 0.3s;
 }
 
-div.topBotomBordersOut a: before {
+div.topBotomBordersOut a:before {
   top: 0;
   transform: translateY(10px);
 }
 
-div.topBotomBordersOut a: after {
+div.topBotomBordersOut a:after {
   bottom: 0;
   transform: translateY(-10px);
 }
 
-div.topBotomBordersOut a:hover: before
-div.topBotomBordersOut a:hover: after {
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0);
 }
