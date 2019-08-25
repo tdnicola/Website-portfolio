@@ -14,6 +14,7 @@ body {
   color: black;
   text-align: center;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -85,7 +86,6 @@ button:focus,
 /*  page header */
 .page-header {
   display: flex;
-
   /* width: 100%; */
   padding: 20px;
 }
@@ -144,22 +144,6 @@ button:focus,
   grid-gap: 5px;
 }
 
-/* About me page */
-.about__table {
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-/*  contact form */
-.contact__me {
-  text-align: center;
-}
-
-/* #contact-form {
-    display: inline-block;
-    margin: auto;
-   } */
-
 form {
   padding: 5px;
 }
@@ -170,6 +154,17 @@ h1 {
 
 nav {
   width: 80%;
+  /* display: inline-block */
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* Grid work page */
@@ -222,7 +217,7 @@ nav {
 } */
 
 /*  screen sice responsiveness 3 grids to 1 at 500px */
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -236,77 +231,12 @@ nav {
   h1 {
     font-size: 24px;
   }
-}
-
-.berlin-illustration {
-  width: 100%;
-  margin: 0 auto;
-}
-
-/*  animation css */
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f55b1f;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(250px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-back {
-  animation-duration: 25s;
-  animation-name: cloud-move-reverse;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+} */
 
 /*  nav animations */
 div.container {
   margin: 0 auto;
-  padding: 5em 3em;
+  padding: 3em 3em;
   text-align: center;
 }
 
@@ -320,6 +250,7 @@ div.container a {
   z-index: 0;
   cursor: pointer;
 }
+
 
 /* Top and Bottom borders go out */
 
@@ -349,4 +280,9 @@ div.topBotomBordersOut a:hover:before,
 div.topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0);
+}
+div.introImg {
+  background: url('../img/introimg.jpg');
+  height: 100vh;
+  background-size: 100% 100%; 
 }
