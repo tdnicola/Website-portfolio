@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
-    <script src="./js/index.js"> </script>
     <!-- Viewport sizing -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class='introImg'>
-    <h1>Tony Nicola</h1>    
-    <h2>Developer</h2>
+    <div class='introImg' id='top'>
+    <h1>Tony Nicola</h1>   
+    <div class='typewriter'>
+        <h2> &lt;/web&gt; Developer</h2>
+    </div>
     </div>
 
-    <header class="navbar" id='menubar'>
-        <!--Add logo here-->
-        <img src="img/oatmealstudio.jpg" class="logo page-header__item" alt="Logo of oatmealstudio, a bowl of oatmeal with sunglasses" >
-        <nav>
-            <div class="navigation-list_item container topBotomBordersOut" id="menubar">
+    <header id='menubar'>
+        <!-- <img src="img/oatmealstudio.jpg" class="logo page-header__item" alt="Logo of oatmealstudio, a bowl of oatmeal with sunglasses" > -->
+        <nav id="menubar">
+            <div class="navigation-list_item container topBotomBordersOut">
                 <ul class="navigation-list page-header__item ">
                     <li>
-                        <a href=".container" role="menuitem" class="navigation-list_item navigation-list_item--active ">Home</a>
+                        <a href=".#top" role="menuitem" class="navigation-list_item">Top</a>
                     </li>
                     <li>
-                        <a href=".container" role="menuitem" class="navigation-list_item">Portfolio</a>
+                        <a href=".#top" role="menuitem" class="navigation-list_item">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#footer" role="menuitem" class="navigation-list_item">Portfolio</a>
                     </li>
                     <li>
                         <a href="files/NicolaResume.pdf" role="menuitem" class="navigation-list_item">Resume</a>
@@ -38,7 +41,7 @@
     </header>
 
     <section>
-            <h1>Projects</h1>
+            <h3>Projects</h3>
             <div class='container'>
             
                 <div class="row">
@@ -59,7 +62,7 @@
                             <h5 class="card-title">BJJ/MMA Angular Quiz</h5>
                             <p class="card-text"> Angular quiz app that tests your knowledge of BJJ or MMA.</p>
                             <a class='codeLinkWebsite' href="https://github.com/tdnicola/healthyPotatoes_movieApp">Code</a>
-                            <a class='codeWebsiteLive' href="https://healthypotatoes.herokuapp.com/">Website</a>
+                            <a class='codeWebsiteLive' href="https://tdnicola.github.io/Vue-todo/">Website</a>
                             </div>
                         </div>
     
@@ -92,7 +95,7 @@
     <div class="profile">
         <!--Add portrait here-->
         <img src="img/0.jpg" class="profile__portrait" alt="portrait of tony nicola">
-        <h1>Call me now for your free reading</h1>
+        <h3>Call me now for your free reading</h3>
         <p>
             My Name is Tony Nicola. I am a developer.
         </p>
@@ -100,7 +103,7 @@
             <a href="mailto:tdnicola@gmail.com">Email me</a>
         </p>
 
-            <footer class="profile_footer">
+            <footer class="profile_footer" id='footer'>
                 <p class="profile_footer__item">
                 Find me on:
                 </p>
@@ -109,6 +112,9 @@
                 <a href="https://github.com/tdnicola" class="profile_footer__item" target="blank"><img src="img/github.svg" alt="Github logo"> </a>
                 <a href="https://www.linkedin.com/in/tony-nicola" class="profile_footer__item" target="blank"><img src="img/linkedin.svg" alt="linkedin logo"> </a>
             </footer>
+    
+            <script src="./js/index.js"> </script>
+
 
 </body>
 </html>

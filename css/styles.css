@@ -14,6 +14,8 @@ body {
   color: black;
   text-align: center;
   margin: 0 auto;
+}
+html {
   scroll-behavior: smooth;
 }
 
@@ -27,44 +29,6 @@ a:focus {
   text-decoration: none;
 }
 
-a:active {
-  /* selected link */
-  color: #3e6655;
-}
-
-button,
-.button {
-  /* overwrites the browser defaults and resets the border */
-  border: none;
-  width: 15%;
-  display: block;
-  margin: 0 auto;
-
-  /* take font from outside?  */
-  font-family: inherit;
-
-  /* styling the button */
-  background-color: #7c5b5b;
-  color: white;
-  font-size: 16px;
-
-  /* text decoration? */
-  text-decoration: none;
-
-  /* button spacing */
-  padding: 10px;
-  border-radius: 3px;
-
-  /* width of the border, type and color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-
-  /* Long version of transition
-   transition-duration: .2s;
-  transition-property: opacity; */
-  transition: 0.2s opacity;
-}
-
-/*  opacity on resume not changing */
 button:hover,
 button:focus,
 .button:hover,
@@ -113,7 +77,8 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  padding: 10px;
+  /* margin-left: 15px; */
 }
 
 /* PROFILE */
@@ -144,18 +109,12 @@ button:focus,
   grid-gap: 5px;
 }
 
-form {
-  padding: 5px;
-}
-
 h1 {
   text-align: center;
+  font-size: 8em;
+  
 }
 
-nav {
-  width: 80%;
-  /* display: inline-block */
-}
 .sticky {
   position: fixed;
   top: 0;
@@ -281,8 +240,40 @@ div.topBotomBordersOut a:hover:after {
   opacity: 1;
   transform: translateY(0);
 }
+
 div.introImg {
   background: url('../img/introimg.jpg');
   height: 100vh;
   background-size: 100% 100%; 
+}
+
+/* typing web developer */
+.typewriter {
+  display: inline-flex;
+}
+
+.typewriter h2 {
+  display: inline-block;
+  font-size: 4em;
+  width: auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; 
+  letter-spacing: .05em; 
+  animation: 
+    typing 2.0s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
