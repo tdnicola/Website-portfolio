@@ -10,7 +10,8 @@
 
 body {
   background-color: #b4b0b0;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
   color: black;
   text-align: center;
   margin: 0 auto;
@@ -20,8 +21,9 @@ html {
 }
 
 a {
-  color: #7c5b5b;
+  color: white;
 }
+
 
 a:hover,
 a:focus {
@@ -47,28 +49,11 @@ button:focus,
   float: right;
 }
 
-/*  page header */
-.page-header {
-  display: flex;
-  /* width: 100%; */
-  padding: 20px;
-}
-
-.page-header__item {
-  flex: 0 1 150px;
-}
-
 .logo {
   width: 150px;
   height: 150px;
   margin-left: 150px;
   border-radius: 50%;
-}
-
-/* not recognizing last child command */
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
 }
 
 .navigation-list {
@@ -79,20 +64,6 @@ button:focus,
   display: inline-block;
   padding: 10px;
   /* margin-left: 15px; */
-}
-
-/* PROFILE */
-.profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 /*  Profile footer flexbox */
@@ -195,12 +166,12 @@ h1 {
 /*  nav animations */
 div.container {
   margin: 0 auto;
-  padding: 3em 3em;
-  text-align: center;
+  /* padding: 3em 3em; */
+  text-align: right;
 }
 
 div.container a {
-  color: rgb(0, 0, 0);
+
   text-decoration: none;
   font: 20px roboto;
   margin: 0 10px;
@@ -241,6 +212,7 @@ div.topBotomBordersOut a:hover:after {
   transform: translateY(0);
 }
 
+/* main hero img */
 div.introImg {
   background: url('../img/introimg.jpg');
   height: 100vh;
@@ -276,4 +248,56 @@ div.introImg {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+/* .skills {
+  float: right;
+} */
+
+.modal {
+  height: 50%;
+}
+
+.containerProject {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  /* width: 600px;
+  height: 600px; */
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerProject:hover .image {
+  opacity: 0.3;
+}
+
+.containerProject:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }

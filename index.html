@@ -3,7 +3,8 @@
 <head>
     <title>3rd best page on the internet</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
@@ -24,10 +25,10 @@
             <div class="navigation-list_item container topBotomBordersOut">
                 <ul class="navigation-list page-header__item ">
                     <li>
-                        <a href=".#top" role="menuitem" class="navigation-list_item">Top</a>
+                        <a href="#top" role="menuitem" class="navigation-list_item">Top</a>
                     </li>
                     <li>
-                        <a href=".#top" role="menuitem" class="navigation-list_item">Skills</a>
+                        <a href="#skills" role="menuitem" class="navigation-list_item">Skills</a>
                     </li>
                     <li>
                         <a href="#footer" role="menuitem" class="navigation-list_item">Portfolio</a>
@@ -39,9 +40,125 @@
             </div>
         </nav>
     </header>
+    <section id="skills">
+        <br>
+        <br>
+        <br>
+        <br>
 
+        <h3>Skills</h3>
+
+        <p>Frontend:</p>
+        <p>HTML CSS Javascript</p>
+
+        <p>Libraries:</p>
+        <p>React, Angular, Vue</p>
+        <p>Styling:</p>
+        <p>Bootstrap</p>
+
+        <p>Backend:</p>
+        <p>ExpressJS, MongoDB, PostgreSQL, NodeJS and AWS(lambda)</p>
+
+        <p>Version Control:</p>
+        <p>Git, Github, Bitbucket</p>
+
+        <p>Testing:</p>
+        <p>TDD, Postman, Jest</p>
+        
+
+    </section>
     <section>
-            <h3>Projects</h3>
+
+        <h3>Projects</h3>
+
+        <!-- hover over Healthy potatos-->
+        <div class='containerProject'>
+            <img class='image' src='./img/mern.png'>
+                 <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:</p>
+                    <p>MERN stack (MongoDB, Express, React, and Node.js) Using password hashing for CRUD methods. Allows you to favorite movies once logged in.</p>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/healthyPotatoes_movieApp'>code</a>
+                    <a class='website' target='_blank' href='https://healthypotatoes.herokuapp.com/'>website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hover over meetup project -->
+        <div class='containerProject'>
+            <img class='image' src='./img/meetup.png'>
+                    <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:<
+                    <p>Meetup Mockup app that uses the meetup API and AWS</p>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/meetup'>code</a>
+                    <a class='website' target='_blank' href='https://tdnicola.github.io/meetup/'>website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hover over discord project -->
+        <div class='containerProject'>
+            <img class='image' src='./img/discord.png'>
+                    <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:</p>
+                    <br>Discord bot that when given commands with either: insult friends, praise friends, random gif, or search for a gif through various APIS.
+                    <br>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/discord_insult-bot'>code</a>
+                    <a class='website' target='_blank' href='https://discordapp.com/api/oauth2/authorize?client_id=613364681750609943&permissions=0&scope=bot'>Server Invite</a>     
+                </div>
+            </div>
+        </div>
+
+                <!-- Hover over vue project -->
+        <div class='containerProject'>
+            <img class='image' src='./img/vue.png'>
+                    <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:</p>
+                    <p>Small app that allows you to add/remove todo items.</p>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/Vue-todo'>code</a>
+                    <a class='website' target='_blank' href='https://tdnicola.github.io/Vue-todo/'>website</a>
+                </div>
+            </div>
+        </div>
+
+                <!-- Hover over angular project -->
+        <div class='containerProject'>
+            <img class='image' src='./img/angular.png'>
+                    <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:</p>
+                    <p>Angular quiz app that tests your knowledge of BJJ or MMA.</p>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/Angular-Quiz/'>code</a>
+                    <a class='website' target='_blank' href='https://tdnicola.github.io/Angular-Quiz/'>website</a>
+                </div>
+            </div>
+        </div>
+
+                <!-- Hover over jQuery website -->
+        <div class='containerProject'>
+            <img class='image' src='./img/jquery.png'>
+                <!--Hover info-->
+            <div class="middle">
+                <div class="text">
+                    <p>Tech Stack:</p>
+                    <p>Jquery website that pulls info from pokeapi.co</p>
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/pokemon-Knowledgebase'>code</a>
+                    <a class='website' target='_blank' href='https://tdnicola.github.io/pokemon-Knowledgebase/'>website</a>
+                </div>
+            </div>
+        </div>
+                
+
+    </section>
+            <!-- <h3>Projects</h3>
             <div class='container'>
             
                 <div class="row">
@@ -113,7 +230,7 @@
                             <img src="./img/meetup.png" class="card-img-top" alt="meetup">
                             <div class="card-body">
                             <h5 class="card-title">Meetup Mockup</h5>
-                            <p class="card-text"> Meetup Mockup app that uses the meetup API and AWS</p>
+                            <p class="card-text">Meetup Mockup app that uses the meetup API and AWS</p>
                             <a class='codeLinkWebsite' href="https://github.com/tdnicola/meetup">Code</a>
                         <a class='codeWebsiteLive' href="https://tdnicola.github.io/meetup/">Website</a>
                             </div>
@@ -121,8 +238,8 @@
     
                 </div>
             </div>
-    
-        </section>
+     -->
+        <!-- </section> -->
         
         
     <div class="profile">
