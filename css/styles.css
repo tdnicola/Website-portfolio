@@ -236,6 +236,7 @@ div.introImg {
   animation: 
     typing 2.0s steps(20, end),
     blink-caret .75s step-end infinite;
+  /* animation-delay: 1s; */
 }
 
 /* The typing effect */
@@ -300,4 +301,18 @@ div.introImg {
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+.skillsContainer {
+  border: 1px solid rgb(49, 47, 47);
+  border-radius: 15px;
+	box-shadow:  -1px 1px rgb(49, 47, 47),
+  -2px 2px rgb(49, 47, 47),
+  -3px 3px rgb(49, 47, 47),
+  -4px 4px rgb(49, 47, 47),
+  -5px 5px rgb(49, 47, 47);
+  display: inline-block;
+  margin: 25px;
+	padding: 10px;
+  width: 50%;
 }
