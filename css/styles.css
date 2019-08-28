@@ -158,7 +158,7 @@ html {
 
 /* typewriting effect is hidden until page fully loads */
 .hidden {
-  display: none
+  visibility: hidden;
 }
 
 .image {
