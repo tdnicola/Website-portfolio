@@ -222,6 +222,7 @@ div.introImg {
 /* typing web developer */
 .typewriter {
   display: inline-flex;
+
 }
 
 .typewriter h2 {
@@ -236,7 +237,6 @@ div.introImg {
   animation: 
     typing 2.0s steps(20, end),
     blink-caret .75s step-end infinite;
-  /* animation-delay: 1s; */
 }
 
 /* The typing effect */
@@ -350,4 +350,8 @@ div.introImg {
   margin-top: 50px;
   padding-top: 2%;
   background-color: black;
+}
+
+.hidden {
+  display: none
 }
