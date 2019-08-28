@@ -10,8 +10,7 @@
 
 body {
   background-color: #b4b0b0;
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   text-align: center;
   margin: 0 auto;
@@ -251,19 +250,21 @@ div.introImg {
   50% { border-color: orange; }
 }
 
-/* .skills {
-  float: right;
-} */
-
 .containerProject {
   position: relative;
   display: inline-block;
   width: 45%;
   margin: 10px;
-  /* width: 600px;
-  height: 600px; */
 }
 
+@media (max-width: 1000px){
+  .containerProject {
+    display: block;
+    margin: 10px auto;
+    width:90%;
+
+  }
+}
 
 .image {
   opacity: 1;
@@ -298,8 +299,7 @@ div.introImg {
   opacity: 0.8;
   color: white;
   font-size: 16px;
-  padding: 16px 32px;
-  padding-bottom: 10%;
+  padding: 4em;
 }
 
 .text .code {
@@ -349,7 +349,7 @@ div.introImg {
   color: white;
   margin-top: 50px;
   padding-top: 2%;
-  background-color: black;
+  background-color: rgb(17, 16, 16);
 }
 
 .hidden {
