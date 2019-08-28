@@ -3,9 +3,10 @@ window.onscroll = function() { stickyBar() };
     // Get the navbar
 window.addEventListener('scroll', stickyBar);
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+var navbar = document.getElementById("menubar");
+var sticky = navbar.offsetTop;
+
 function stickyBar() {
-    var navbar = document.getElementById("menubar");
-    var sticky = navbar.offsetTop;
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
     } else {
@@ -19,5 +20,4 @@ function showTyping() {
     typeWriter.classList.remove('hidden');
 }
 
-console.log('hello')
 window.addEventListener('load', showTyping);
