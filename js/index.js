@@ -20,4 +20,4 @@ function showTyping() {
     typeWriter.classList.remove('hidden');
 }
 
-window.addEventListener('load', showTyping);
+window.onload = showTyping;

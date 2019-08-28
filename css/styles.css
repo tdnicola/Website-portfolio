@@ -283,7 +283,6 @@ html {
 /* typing web developer */
 .typewriter {
   display: inline-flex;
-
 }
 
 .typewriter h2 {
@@ -304,7 +303,6 @@ html {
   background: url('../img/vue.png') no-repeat center center fixed;
   max-width:100%;
   height:auto;
-
 }
 
 #portfolio {
