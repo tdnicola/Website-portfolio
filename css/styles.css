@@ -150,7 +150,7 @@ html {
 }
 
 /* adjustment of projects to single */
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .containerProject {
     display: block;
     margin: 10px auto;

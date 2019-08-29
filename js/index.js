@@ -1,4 +1,3 @@
-
 //waiting until page is loaded for typewritter effect
 function showTyping() {
     var typeWriter = document.querySelector('.typewriter');
