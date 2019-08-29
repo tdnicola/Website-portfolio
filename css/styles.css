@@ -16,15 +16,6 @@
   50% { border-color: orange; }
 }
 
-/* adjustment of projects to single */
-@media (max-width: 1000px) {
-  .containerProject {
-    display: block;
-    margin: 10px auto;
-    width:90%;
-  }
-}
-
 a {
   color: white;
 }
@@ -109,6 +100,14 @@ h1 {
   font-size: 8em;
 }
 
+h3 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
 /* smooth-scrolling */
 html {
   scroll-behavior: smooth;
@@ -148,6 +147,15 @@ html {
   display: inline-block;
   width: 45%;
   margin: 10px;
+}
+
+/* adjustment of projects to single */
+@media (max-width: 1000px) {
+  .containerProject {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+  }
 }
 
 .healthyPotatos {
@@ -199,8 +207,9 @@ html {
 }
 
 .navigation-list li {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px;
+  /* float: right; */
   /* margin-left: 15px; */
 }
 
@@ -216,6 +225,11 @@ html {
   padding: 5px;
   margin: 5px;
   grid-gap: 5px;
+}
+
+.profile__portrait {
+  margin: 2em;
+  border-radius: 50%;
 }
 
 .skillsContainer {
