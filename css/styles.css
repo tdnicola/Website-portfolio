@@ -74,7 +74,7 @@ div.topBotomBordersOut a:hover:after {
 div.introImg {
   background: url('../img/introimg.jpg');
   height: 100vh;
-  background-size: 100% 100%; 
+  background-size: cover;
   color: white;
 }
 
@@ -145,9 +145,7 @@ img {
     margin: 10px auto;
     width: 90%;
   }
-  div.introImg {
-    background-size: cover;
-  }
+
 }
 
 .healthyPotatos {
@@ -199,10 +197,7 @@ img {
 }
 
 .navigation-list li {
-  /* display: inline-block; */
   padding: 10px;
-  /* float: right; */
-  /* margin-left: 15px; */
 }
 
 /*  Profile footer flexbox */
@@ -243,7 +238,10 @@ img {
   .skillsContainer {
     width: 75%;
   }
-
+  .introText {
+    padding-top: 60vw;
+    display: block;
+  }
 }
 
 .skillsContainer img {
