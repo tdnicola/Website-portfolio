@@ -106,14 +106,6 @@ img {
   background: url('../img/angular.png') no-repeat center center fixed;
 }
 
-.codeLinkWebsite {
-  float: left;
-}
-
-.codeWebsiteLive {
-  float: right;
-}
-
 .card {
   margin: 10px;
 }
@@ -123,10 +115,6 @@ img {
 }
 
 /* black image over containerProject */
-.containerProject:hover .image {
-  opacity: 0.3;
-}
-
 .containerProject:hover .middle {
   opacity: 1;
 }
@@ -139,13 +127,12 @@ img {
 }
 
 /* adjustment of projects to single */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .containerProject {
     display: block;
     margin: 10px auto;
     width: 90%;
   }
-
 }
 
 .healthyPotatos {
@@ -182,14 +169,17 @@ img {
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  padding: 5px;
 }
 
 .navigation-list {
@@ -276,11 +266,21 @@ img {
 }
 
 .text {
-  background-color: black;
-  opacity: 0.8;
   color: white;
-  font-size: 16px;
-  padding: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: .8;
+}
+
+.containerImage {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .text .code {
