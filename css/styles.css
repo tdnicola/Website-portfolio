@@ -14,7 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: black;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 button:hover,
@@ -37,7 +37,7 @@ div.container a {
   margin: 0 10px;
   padding: 10px;
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
   cursor: pointer;
 }
 
@@ -112,10 +112,12 @@ img {
 }
 
 .containerProject {
+  border-radius: 10px;
   position: relative;
   display: inline-block;
   width: 45%;
   margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
 }
 
 /* adjustment of projects to single */
@@ -139,6 +141,7 @@ img {
 }
 
 .image {
+  border-radius: 10px;
   opacity: 1;
   display: block;
   width: 100%;
@@ -161,6 +164,7 @@ img {
 }
 
 .middle {
+  border-radius: 10px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -204,6 +208,7 @@ img {
   background: #e6ecf0;
   border: 1px solid rgb(49, 47, 47);
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
   display: inline-block;
   margin: 25px;
 	padding: 10px;
@@ -233,12 +238,14 @@ img {
   padding: 10px;
   text-align: left;
   width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -275,20 +282,21 @@ img {
 .typing {
     display: inline-block;
     font-size: 5vw;
-    width: auto;
-    margin: 0 auto; 
     letter-spacing: .05em; 
+    margin: 0 auto; 
+    width: auto;
 }
 
 .vueTodo {
   background: url('../img/vue.png') no-repeat center center fixed;
-  max-width:100%;
   height:auto;
+  max-width:100%;
 }
 
 #portfolio {
-  color: white;
-  margin-top: 5em;
-  padding-top: 1em;
   background-color: rgb(17, 16, 16);
+  color: white;
+  margin-top: 5em;  
+  padding-bottom: 5em;
+  padding-top: 1em;
 }
