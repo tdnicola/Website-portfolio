@@ -92,6 +92,7 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+  text-align: center;
 }
 /* smooth-scrolling */
 html {
@@ -263,6 +264,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: .8;
+  font-size: 1.2em;
 }
 
 .containerImage {
