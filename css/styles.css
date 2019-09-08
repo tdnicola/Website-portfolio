@@ -103,10 +103,13 @@ img {
   max-width: 100%;
 }
 
-.angularQuiz {
-  background: url('../img/angular.png') no-repeat center center fixed;
+.bio {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  line-height: 30px;
 }
-
 /* black image over containerProject */
 .containerProject:hover .middle {
   opacity: 1;
@@ -130,12 +133,6 @@ img {
   }
 }
 
-.healthyPotatos {
-  background: url('../img/mern.png');
-  max-width:100%;
-  height:auto;
-}
-
 /* typewriting effect is hidden until page fully loads */
 .hidden {
   visibility: hidden;
@@ -149,12 +146,6 @@ img {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-}
-
-.jquery {
-  background: url('../img/jquery.png');
-  max-width:100%;
-  height:auto;
 }
 
 .logo {
@@ -184,6 +175,10 @@ img {
 
 .navigation-list li {
   padding: 10px;
+}
+
+.profile {
+  margin-top: 4em;
 }
 
 /*  Profile footer flexbox */
@@ -263,7 +258,7 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  opacity: .8;
+  /* opacity: .8; */
   font-size: 1.2em;
 }
 
@@ -287,12 +282,6 @@ img {
     letter-spacing: .05em; 
     margin: 0 auto; 
     width: auto;
-}
-
-.vueTodo {
-  background: url('../img/vue.png') no-repeat center center fixed;
-  height:auto;
-  max-width:100%;
 }
 
 #portfolio {
