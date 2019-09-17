@@ -86,7 +86,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.3em;
   margin: 2em;
 }
 
@@ -104,7 +104,7 @@ img {
 }
 
 .bio {
-  background: url('../img/biobackground.jpeg');
+  background: url('../img/biobackground.jpg');
   height: 100vh;
   background-size: cover;
   font-size: 1.1em;
@@ -126,7 +126,7 @@ img {
   border-radius: 10px;
   position: relative;
   display: inline-block;
-  width: 45%;
+  width: 40%;
   margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
 }
@@ -143,6 +143,11 @@ img {
 /* typewriting effect is hidden until page fully loads */
 .hidden {
   visibility: hidden;
+}
+
+.h3Contact {
+  margin-top: 0;
+  padding-top: 2em;
 }
 
 .image {
@@ -190,7 +195,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10em;
+  margin-top: 10%;
   bottom: 0;
   
 }
@@ -219,7 +224,7 @@ img {
 
 @media only screen and (max-width: 600px) {
   .skillsContainer {
-    width: 75%;
+    width: 65%;
   }
   .introText {
     padding-top: 60vw;
@@ -257,15 +262,9 @@ img {
 
 .text {
   color: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   text-align: center;
-  /* opacity: .8; */
   font-size: 1.2em;
+  padding: 20px 40px;
 }
 
 .containerImage {
