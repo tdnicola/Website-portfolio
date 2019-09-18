@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+window.addEventListener("load", function(event) { 
     setTimeout(function(){
     new TypeIt('.typing')
       .type('&lt;/web&gt; Developer')
