@@ -21,6 +21,16 @@
     color: black !important;
     /* background-color: #b4b0b0; */
   }
+  
+  .profile_footer {
+    padding: 10px;
+    opacity: 0.7;
+  }
+  
+  .profile_footer__item {
+    padding: 5px;
+    /* margin: 5px; */
+  }
 }
 
 a {
@@ -205,13 +215,17 @@ html {
 
 /*  Profile footer flexbox */
 .profile_footer {
-  padding: 10px;
-  opacity: 0.7;
+  float: left;
+  position: fixed;
+  margin-left: 15px;
+  bottom: 0;
+  display: grid;
 }
 
 .profile_footer__item {
-  padding: 5px;
-  /* margin: 5px; */
+  /* padding: 5px; */
+  margin: 2px;
+  grid-column: 1 / 1;
 }
 
 .profile__portrait {
