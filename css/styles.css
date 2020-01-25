@@ -130,6 +130,21 @@ html {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
 }
 
+.email {
+    /* margin-right: 15px; */
+    /* writing-mode: vertical-rl;
+    text-orientation: upright; */
+    float: right;
+    opacity: .7;
+    bottom : 0;
+    right: 0;
+    position: fixed;
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+.email a {
+  text-decoration: none;
+}
 /* typewriting effect is hidden until page fully loads */
 .hidden {
   visibility: hidden;
