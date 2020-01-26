@@ -94,14 +94,11 @@ h4 {
   font-size: 1.5em;
   text-align: center;
 }
+
 /* smooth-scrolling */
 html {
   scroll-behavior: smooth;
 }
-
-/* img {
-  max-width: 100%;
-} */
 
 .profileBio {
   background: url('../img/biobackground.jpg');
@@ -116,6 +113,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* black image over containerProject */
 .containerProject:hover .middle {
   opacity: 1;
@@ -131,9 +129,6 @@ html {
 }
 
 .email {
-    /* margin-right: 15px; */
-    /* writing-mode: vertical-rl;
-    text-orientation: upright; */
     float: right;
     opacity: .7;
     bottom : 0;
@@ -149,6 +144,7 @@ html {
 .email img {
   vertical-align: middle;
 }
+
 /* typewriting effect is hidden until page fully loads */
 .hidden {
   visibility: hidden;
@@ -308,10 +304,12 @@ html {
   .skillsContainer {
     width: 65%;
   }
+
   .introText {
     padding-top: 60vw;
     display: block;
   }
+
   .profileBio {
     display: block;
     background-image: none !important;
@@ -326,7 +324,14 @@ html {
     position: relative;
     display: inline;
   }
-  
+  .email {
+      padding: 10px;
+      float: none !important;
+      position: relative;
+      display: block;
+      margin-bottom: 10px;
+  }
+
   .profile_footer__item {
     padding: 25px;
   }
