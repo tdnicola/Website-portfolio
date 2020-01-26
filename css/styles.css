@@ -145,6 +145,10 @@ html {
 .email a {
   text-decoration: none;
 }
+
+.email img {
+  vertical-align: middle;
+}
 /* typewriting effect is hidden until page fully loads */
 .hidden {
   visibility: hidden;
