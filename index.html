@@ -4,7 +4,7 @@
     <title>Web Developer</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/min.styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <!-- Viewport sizing -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,15 +92,12 @@
         <div class='skillsDescription'>
             <h4>Additional info</h4>
             <ul> 
-                <li><i>Programming language:</i> Javscript</li>
-                <li><i>Styling:</i> CSS, SASS/SCSS</li>
-                <li><i>Frontend:</i> ReactJS, VueJS, AngularJS, DustJS</li>
-                <li><i>Backend:</i> ExpressJS, NodeJS, Serverless + AWS (lambda), Heroku</li>
-                <li><i>Styling libraries:</i> Material UI, Bootstrap</li>
-                <li><i>Development tools:</i> NPM, Babel, Yarn</li>
-                <li><i>Design tools:</i> Adobe illustrator</li>
-                <li><i>Testing:</i> Jest, Puppeteer, Postman, TDD, BDD, End-to-End</li>
-                <li><i>OS:</i> Windows, Mac, Linux</li>
+                <li class="skillsList"><i>Programming languages: </i>Javascript, HTML, CSS & Sass</li>
+                <li class="skillsList"><i>Libraries/Frameworks: </i>React, jQuery, Bootstrap, Express, Node.js, some Vue/Angular</li>
+                <li class="skillsList"><i>Development tools and Platforms: </i>Git, Github, NPM, Babel, Heroku, TDD/BDD/End-to-End, AWS (Lambda)</li>
+                <li class="skillsList"><i>Design tools: </i>Adobe illustrator</li>
+                <li class="skillsList"><i>Testing: </i>Jest, Puppeteer, Postman, TDD, BDD, End-to-End</li>
+                <li class="skillsList"><i>OS: </i>Windows, Mac, Linux</li>
             </ul>
         </div>
 
@@ -111,10 +108,10 @@
         <h3>Projects</h3>
 
         <!-- hover over healthyPotatos potatos-->
-        <div class='containerProject'>
+        <div class='containerProject' id="featuredProject">
             <img class='image' src='./img/mern.png' class='containerImage'>
                  <!--Hover info-->
-            <div class="middle">
+            <div class="middleFeatured">
                 <div class="text">
                     <p>Healthy Potatoes</p>
 
@@ -125,12 +122,40 @@
                     <br>
 
                     <p>MERN stack (MongoDB, Express, React, and Node.js) using password hashing for CRUD methods. Allows you to favorite/unfavorite different movies once logged in.</p>
+                    <p>App is hosted on Heroku so may be a bit slow to start up.</p>
+                    <p>Test account already created with: </p>
+                    <p>username: test</p>
+                    <p>password: test</p>
                     <a class='code' target='_blank' href='https://github.com/tdnicola/healthyPotatoes_movieApp'>Code</a>
                     <a class='website' target='_blank' href='https://healthypotatoes.herokuapp.com/'>Website</a>
                 </div>
             </div>
         </div>
 
+        <div class='containerProject' id="featuredProject">
+            <img class='image' src='./img/kanBan.png' class='containerImage'>
+                 <!--Hover info-->
+            <div class="middleFeatured">
+                <div class="text">
+                    <p>KanBan Board</p>
+
+                    <img src="./img/logos/mongodb-original-wordmark.svg" alt="mongoDB icon">
+                    <img src="./img/logos/express-original-wordmark.svg" alt="express logo">
+                    <img src="./img/logos/react-original-wordmark.svg" alt="react logo">
+                    <img src="./img/logos/nodejs-original-wordmark.svg" alt="nodejs logo">
+                    <br>
+
+                    <p>MERN stack (MongoDB, Express, React, and Node.js) Drag and drop style Kanban board.</p>
+                    <p>Current project, still a WIP. Currently working on mongoose routing for mongoDB.</p>
+
+                    <a class='code' target='_blank' href='https://github.com/tdnicola/kanban-react'>Code</a>
+                    <a class='website' target='_blank' href='https://tdnicola.github.io/kanban-react/'>Website</a>
+                </div>
+            </div>
+        </div>
+
+
+        <p>Other Projects</p>
         <!-- Hover over Librarian  website -->
         <div class='containerProject'>
             <img class='image' src='./img/library.png'>
