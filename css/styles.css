@@ -1,407 +1,588 @@
-
 a {
-  color: white;
-  
+	color: white;
 }
 
 a:hover,
 a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
+	/* No underlining when hovering over a link */
+	text-decoration: none;
 }
 
 body {
-  background-color: #3B3B3B;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  margin: 0 auto; 
+	background-color: #3b3b3b;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin: 0 auto;
+}
+
+body.modal-open {
+	height: 100vh;
+	overflow-y: hidden;
 }
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer;
-  opacity: 0.8;
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 /*  nav animations */
 div.container {
-  margin: 0 auto;
-  text-align: right;
+	margin: 0 auto;
+	text-align: right;
 }
 
 div.container a {
-  text-decoration: none;
-  font: 20px roboto;
-  /* margin: 0 10px; */
-  padding: 5px;
-  position: relative;
-  cursor: pointer;
+	text-decoration: none;
+	font: 20px roboto;
+	/* margin: 0 10px; */
+	padding: 5px;
+	position: relative;
+	cursor: pointer;
 }
 
 /* Top and Bottom borders go out */
 div.topBottomBordersOut a:before,
 div.topBottomBordersOut a:after {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: white;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: white;
+	content: '';
+	opacity: 0;
+	transition: all 0.3s;
 }
 
 div.topBottomBordersOut a:before {
-  top: 0;
-  transform: translateY(10px);
+	top: 0;
+	transform: translateY(10px);
 }
 
 div.topBottomBordersOut a:after {
-  bottom: 0;
-  transform: translateY(-10px);
+	bottom: 0;
+	transform: translateY(-10px);
 }
 
 div.topBottomBordersOut a:hover:before,
 div.topBottomBordersOut a:hover:after {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 /* main hero img */
 div.introImg {
-  background: url('../img/computerBackground.jpg');
-  height: 100vh;
-  background-size: cover;
-  color: white;
+	background: url('../img/computerBackground.jpg');
+	height: 100vh;
+	background-size: cover;
+	color: white;
 }
 
 h1 {
-  margin-top: 0;
-  padding-top: 1em;
-  font-size: 10vw;
+	margin-top: 0;
+	padding-top: 1em;
+	font-size: 10vw;
 }
 
 h3 {
-  font-size: 2.3em;
+	font-size: 2.3em;
 }
 
 h4 {
-  font-size: 1.5em;
-  text-align: center;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 /* smooth-scrolling */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .profileBio {
-  font-size: 1.1em;
-  line-height: 30px;
-  color: white;
+	font-size: 1.1em;
+	line-height: 30px;
+	color: white;
 }
 
 /* Container  */
 .profileInfoContainer {
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
 }
 
 .profileBioLeft {
-  display: inline-block;
-  width: 40%;
-  margin-right: 5em;
-  max-width: 50%;
+	display: inline-block;
+	width: 40%;
+	margin-right: 5em;
+	max-width: 50%;
 }
 
 .profileBioRight {
-  display: inline-block;
-  width: 45%;
-  text-align: left;
-  font-size: .9em;
+	display: inline-block;
+	width: 45%;
+	text-align: left;
+	font-size: 0.9em;
 }
-
 
 /* black image over containerProject */
 .containerProject:hover .middle {
-  opacity: 1;
+	opacity: 1;
 }
 
 .containerProject:hover .middleFeatured {
-  opacity: 1;
-  width: 50%;
-  float: right
+	opacity: 1;
+	width: 50%;
+	float: right;
 }
 
 .containerProject {
-  border-radius: 10px;
-  position: relative;
-  display: inline-block;
-  width: 40%;
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
+	border-radius: 10px;
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
 }
 
 #featuredProject {
-  width: 80%;
+	width: 80%;
 }
 
 .email {
-    float: right;
-    opacity: .7;
-    bottom : 0;
-    right: 0;
-    position: fixed;
-    margin-right: 15px;
-    margin-bottom: 4px;
+	float: right;
+	opacity: 0.7;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	margin-right: 15px;
+	margin-bottom: 4px;
 }
 
 .email a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .email img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 /* typewriting effect is hidden until page fully loads */
 .hidden {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .h3Contact {
-  margin-top: 0;
-  padding-top: 2em;
+	margin-top: 0;
+	padding-top: 2em;
 }
 
 .image {
-  border-radius: 10px;
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+	border-radius: 10px;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
-  margin-left: 150px;
-  border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin-left: 150px;
+	border-radius: 50%;
 }
 
-.middle, .middleFeatured {
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #b4b0b0;
+.middle,
+.middleFeatured {
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #b4b0b0;
 }
 
 .navigation-list {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .navigation-list li {
-  padding: 10px;
+	padding: 10px;
 }
 
 .media_links {
-  display: grid;
+	display: grid;
 }
 /*  Profile footer flexbox */
 .profile_footer {
-  position: fixed;
-  margin-left: 15px;
-  bottom: 0;
-  display: grid;
+	position: fixed;
+	margin-left: 15px;
+	bottom: 0;
+	display: grid;
 }
 
 .profile_media {
-  float: right;
-  /* margin-right: 50px; */
-  padding-right: 10px;
-  margin-top: -10px;
-  grid-column: 1 / 1;
-  opacity: .7;  
-  filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .25s ease-in-out;  
+	float: right;
+	/* margin-right: 50px; */
+	padding-right: 10px;
+	margin-top: -10px;
+	grid-column: 1 / 1;
+	opacity: 0.7;
+	filter: gray; /* IE5+ */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-webkit-transition: all 0.25s ease-in-out;
 }
 
 .profile_media:hover {
-  filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1);
+	filter: none;
+	-webkit-filter: grayscale(0);
+	-webkit-transform: scale(1);
 }
 
 .profile__portrait {
-  position: absolute;
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0px 0px -150px;
-  filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .25s ease-in-out;  
+	position: absolute;
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0px 0px -150px;
+	filter: gray; /* IE5+ */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-webkit-transition: all 0.25s ease-in-out;
 }
 
 .profile__portrait:hover {
-  filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1);
+	filter: none;
+	-webkit-filter: grayscale(0);
+	-webkit-transform: scale(1);
 }
 
 /* testing circle around circle */
 .imageBorder {
-  border: 5px solid white;
-  border-radius: 50%;
-  height: 350px;
-  width: 350px;
-  position: relative;
+	border: 5px solid white;
+	border-radius: 50%;
+	height: 350px;
+	width: 350px;
+	position: relative;
 }
 
 .imageBorder:hover {
-  /* -webkit-transform: scale(.9); */
-  /* -webkit-transition: all .5s ease-in-out;   */
+	/* -webkit-transform: scale(.9); */
+	/* -webkit-transition: all .5s ease-in-out;   */
 }
 
-
 .skillsContainer {
-  background: #e6ecf0;
-  border: 1px solid rgb(49, 47, 47);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
-  display: inline-block;
-  margin: 25px;
+	background: #e6ecf0;
+	border: 1px solid rgb(49, 47, 47);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	margin: 25px;
 	padding: 10px;
-  width: 25%;
+	width: 25%;
 }
 
 .skillsContainer img {
-  margin: 7px;
+	margin: 7px;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 .text {
-  color: black;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 15px 30px;
+	color: black;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 15px 30px;
 }
 
 .containerImage {
-  display: block;
-  width: 100%;
-  height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/* module */
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	z-index: 5;
 }
 
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	height: 75%;
+	width: 75%;
+	border-radius: 0.5rem;
+	z-index: 5;
+	text-align: left;
+}
+
+.close-button {
+	float: right;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: darkgray;
+}
+.close-button:hover {
+	background-color: rgb(75, 74, 74);
+}
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* end module */
+
 .text .code {
-  float: left;
+	float: left;
 }
 
 .text .website {
-  float: right;
+	float: right;
 }
 
 .typing {
-    display: inline-block;
-    font-size: 5vw;
-    letter-spacing: .05em; 
-    margin: 0 auto; 
-    width: auto;
+	display: inline-block;
+	font-size: 5vw;
+	letter-spacing: 0.05em;
+	margin: 0 auto;
+	width: auto;
 }
 
 #portfolio {
-  /* background-color: rgb(17, 16, 16); */
-  color: white;
-  padding-bottom: 2em;
+	/* background-color: rgb(17, 16, 16); */
+	color: white;
+	padding-bottom: 2em;
 }
 
 /* adjustment of projects to single */
 @media (max-width: 1200px) {
-  .containerProject {
-    display: block;
-    margin: 10px auto;
-    width: 90% !important;
-  }
+	.containerProject {
+		display: block;
+		margin: 10px auto;
+		width: 90% !important;
+	}
 }
 
 @media (max-width: 900px) {
-  .profileInfoContainer {
-    display: block;
-  }
+	.profileInfoContainer {
+		display: block;
+	}
 
-  .profileBioLeft {
-    width: 80%;
-    display: block;
-    position: relative;
-  }
+	.profileBioLeft {
+		width: 80%;
+		display: block;
+		position: relative;
+	}
 
-  .profileBioRight {
-    width: 80%;
-    display: block;
-    position: relative;
-  }
+	.profileBioRight {
+		width: 80%;
+		display: block;
+		position: relative;
+	}
 
-  .profileBio {
-    display: block;
-  }
+	.profileBio {
+		display: block;
+	}
 
-  #portfolio {
-    margin-top: 50%;
-  }
+	#portfolio {
+		margin-top: 500px;
+	}
 }
 
 @media (max-width: 600px) {
-  .skillsContainer {
-    width: 65%;
-  }
+	.trigger {
+		visibility: hidden;
+	}
+	.skillsContainer {
+		width: 65%;
+	}
 
-  .introText {
-    padding-top: 60vw;
-    display: block;
-  }
-  
-  .profile_footer {
-    margin-top: 50px;
-    padding: 10px;
-    float: none !important;
-    position: relative;
-    display: inline;
-  }
+	.introText {
+		padding-top: 60vw;
+		display: block;
+	}
 
-  .email {
-      padding: 10px;
-      float: none !important;
-      position: relative;
-      display: block;
-      margin-bottom: 10px;
-  }
+	.profile_footer {
+		margin-top: 50px;
+		padding: 10px;
+		float: none !important;
+		position: relative;
+		display: inline;
+	}
+
+	.email {
+		padding: 10px;
+		float: none !important;
+		position: relative;
+		display: block;
+		margin-bottom: 10px;
+	}
+	#portfolio {
+		margin-top: 600px;
+	}
+}
+
+/* modal and terminal */
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 75%;
+	border-radius: 0.5rem;
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+	margin: 0 auto;
+	padding: 2rem;
+	color: white;
+	font: 1.3rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #c8c8c8;
+}
+.modal h4 {
+	margin-top: 10px;
+}
+.modal-content::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: repeating-linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.15),
+		rgba(0, 0, 0, 0.15) 1px,
+		transparent 1px,
+		transparent 2px
+	);
+	pointer-events: none;
+}
+.close-button {
+	float: right;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: lightgray;
+}
+.close-button:hover {
+	background-color: darkgray;
+}
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+::-moz-selection {
+	background: #0080ff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #0080ff;
+	text-shadow: none;
+}
+
+.Terminal {
+	border: 1.5px solid white;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#cmdline.after {
+	content: '~ projects ';
+}
+
+a {
+	color: white;
+}
+
+.projects {
+	color: #69c2cf;
+}
+
+.cd.projects {
+	color: white;
+}
+
+.projects.ls {
+	color: white;
+}
+
+.file.projects {
+	color: white;
+}
+
+.cat.projects {
+	color: white;
+}
+
+.cat.hidden {
+	opacity: 1;
+}
+
+div .hidden {
+	opacity: 0.5;
+}
+
+.hiddenImg {
+	height: 45%;
+	width: 45%;
 }
