@@ -249,10 +249,10 @@ var Terminal = (function () {
 		this.html.appendChild(this._innerWindow);
 
 		this.setTextColor('white');
-		this.setTextSize('.8em');
+		this.setTextSize('1em');
 
-		this.setWidth('65%');
-		this.setHeight('65%');
+		this.setWidth('85%');
+		this.setHeight('85%');
 
 		this.html.style.fontFamily = 'Monaco, Courier';
 		this.html.style.margin = '0 auto';
