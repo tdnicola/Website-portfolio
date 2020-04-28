@@ -36,7 +36,6 @@ function windowOnClick(event) {
 		return;
 	}
 }
-console.log(modal.classList.contains('show-modal'));
 if (modal.classList.contains('show-modal') === true) {
 	console.log('hello true');
 }
@@ -190,7 +189,9 @@ var Terminal = (function () {
 		this.print = function (message) {
 			var newLine = document.createElement('div');
 			newLine.textContent = message;
-			newLine.className = message.replace(/[^a-zA-Z0-9]/g, ' '); //remove all special characters from classname for styling
+			// newClass = message.replace(/[^a-zA-Z0-9]/g, ' ');
+			// console.log(newClass.split(' '));
+			// newLine.className = message.replace(/[^a-zA-Z0-9]/g, ' '); //remove all special characters from classname for styling
 			this._output.appendChild(newLine);
 		};
 
