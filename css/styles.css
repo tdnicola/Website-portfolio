@@ -4,7 +4,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	margin: 0 auto;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 div.introImg {
@@ -372,6 +372,7 @@ div .hidden {
 .profileBioRight {
 	width: 90%;
 	margin: auto;
+	font-size: 1.1em;
 }
 
 @media (min-width: 768px) {
