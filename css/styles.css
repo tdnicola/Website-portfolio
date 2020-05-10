@@ -357,10 +357,17 @@ div .hidden {
 }
 .mediaLinks a {
 	padding-left: 20px;
-
 	filter: gray; /* IE5+ */
 	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
 	-webkit-transition: all 0.25s ease-in-out;
+}
+
+.mediaLinksFooter a {
+	margin: 20px;
+}
+
+.mediaLinksFooter {
+	padding-bottom: 50px;
 }
 
 .profile_media:hover {
