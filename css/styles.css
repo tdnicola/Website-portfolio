@@ -382,7 +382,7 @@ div .hidden {
 	font-size: 1.1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
 	div.introImg {
 		background: url('../img/computerBackground.jpg');
 		height: 100vh;
@@ -453,6 +453,9 @@ div .hidden {
 		display: inline-block;
 		width: 45%;
 		text-align: left;
+	}
+	.profileBio {
+		margin-bottom: 10em;
 	}
 	/* Terminal showing */
 	.trigger {
