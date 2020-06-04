@@ -214,11 +214,11 @@ div.topBottomBordersOut a:hover:after {
 	background-color: #4f4f4f;
 }
 
-.text .code {
+.code {
 	float: left;
 }
 
-.text .website {
+.website {
 	float: right;
 }
 /* TERMINAL */

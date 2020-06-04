@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Web Developer</title>
-		<link
-			rel="icon"
-			type="image/png"
-			href="img/favicon-32x32.png"
-			sizes="32x32"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" type="text/css" href="css/min.styles.css" />
-		<meta charset="UTF-8" />
-		<!-- Viewport sizing -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
-	<body>
-		<!--  
+
+<head>
+	<title>Web Developer</title>
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/min.styles.css" />
+	<meta charset="UTF-8" />
+	<!-- Viewport sizing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Tony Nicola, Tony, Nicola, developer, javascript, full stack developer, front-end developer, software developer, software engineer, web developer, portfolio" />
+</head>
+
+<body>
+	<!--  
          _   _      _ _         _____ _                   
         | | | |    | | |       |_   _| |                  
         | |_| | ___| | | ___     | | | |__   ___ _ __ ___ 
@@ -27,426 +23,312 @@
         \_| |_/\___|_|_|\___/    \_/ |_| |_|\___|_|  \___|
         I'm honored you're checking me out on here. Stay awesome homie.  
     -->
-		<div class="introImg" id="top">
-			<div class="introText">
-				<h1>Tony Nicola</h1>
-				<h2 class="typing"></h2>
-			</div>
+	<div class="introImg" id="top">
+		<div class="introText">
+			<h1>Tony Nicola</h1>
+			<h2 class="typing"></h2>
 		</div>
+	</div>
 
-		<header>
-			<nav id="menubar" class="sticky">
-				<div class="navigation-list_item container topBottomBordersOut">
-					<ul class="navigation-list page-header__item">
-						<li>
-							<a class="trigger">Terminal</a>
-						</li>
+	<header>
+		<nav id="menubar" class="sticky">
+			<div class="navigation-list_item container topBottomBordersOut">
+				<ul class="navigation-list page-header__item">
+					<li>
+						<a class="trigger">Terminal</a>
+					</li>
 
-						<li>
-							<a href="#TonyNicola" role="menuitem" class="navigation-list_item"
-								>About</a
-							>
-						</li>
-						<li>
-							<a href="#portfolio" role="menuitem" class="navigation-list_item"
-								>Projects</a
-							>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+					<li>
+						<a href="#TonyNicola" role="menuitem" class="navigation-list_item">About</a>
+					</li>
+					<li>
+						<a href="#portfolio" role="menuitem" class="navigation-list_item">Projects</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-		<!-- TERMINAL -->
-		<div class="modal">
-			<div class="modal-content">
-				<span class="close-button">&times;</span>
-				<h4>Terminal</h4>
-				<!-- <ul>
+	<!-- TERMINAL -->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close-button">&times;</span>
+			<h4>Terminal</h4>
+			<!-- <ul>
 					<li>ls to show files</li>
 					<li>cat to read files</li>
 					<li>clear to clear terminal</li>
 					<li>+ some hiddens</li>
 				</ul> -->
+		</div>
+	</div>
+
+	<div class="profileBio" id="TonyNicola">
+		<div class="profileInfoContainer">
+			<div class="profileBioLeft">
+				<div class="imageBorder">
+					<img src="img/0.jpg" class="profile__portrait" alt="portrait of tony nicola" />
+				</div>
+			</div>
+
+			<div class="profileBioRight">
+				<h3 class="h3Contact">Hello There!</h3>
+
+				I am a front-end web developer with a skill for building
+				relationships. I enjoy coding in JavaScript, am experienced in using
+				React, and have recently been learning Python and Gatsby.
+				<p>
+					Having worked closely with companies and business owners for the
+					majority of my career, I bring a uniquely user-centered perspective
+					to every project. I am experienced in collaborating remotely in a
+					team environment as well as working independently.
+				</p>
+
+				<p>
+					In addition to programming, I enjoy practing Brazillian Jiu Jitsu,
+					weight lifting, pc gaming, and experimenting with home automation
+					using smart home tech.
+				</p>
+				<p>
+					I'm currently looking for employment , if we look like a good match,
+					let's chat.
+				</p>
+				<div class="mediaLinks">
+					<h4>Connect on:</h4>
+					<a href="https://github.com/tdnicola" class="profile_media" target="blank">
+						<img width="30px" height="30px" src="img/githubWhite.svg" alt="Github logo" />
+					</a>
+					<a href="https://www.linkedin.com/in/tony-nicola" class="profile_media" target="blank">
+						<img width="30px" height="30px" src="img/linkedin.svg" alt="linkedin logo" />
+					</a>
+					<a href="mailto:tdnicola@gmail.com">
+						<img class="emailLogo" src="img/mailicon.png" width="20" />
+						tdnicola@gmail.com
+					</a>
+				</div>
+				<br />
+			</div>
+		</div>
+	</div>
+
+	<section id="portfolio">
+		<h3>Featured Projects</h3>
+		<div class="featuredContainer">
+			<div class="project">
+				<div class="projectInfo card">
+					<header class="project_header">
+						<h2>Healthy Potatoes</h2>
+					</header>
+					<p>
+						MERN stack App for favoriting movies. Uses password hashing for
+						CRUD methods. Allows you to favorite/unfavorite different movies
+						once logged in.
+					</p>
+					<p>Sample: username: test, password: test</p>
+
+					<a class="code" target="_blank" href="https://github.com/tdnicola/healthyPotatoes_movieApp">Code</a>
+					<a class="website" target="_blank" href="https://healthypotatoes.herokuapp.com/">Website</a>
+				</div>
+				<img class="projectImage" src="./img/mern.png" alt="" />
+			</div>
+			<div class="project">
+				<div class="projectInfo card">
+					<header class="project_header">
+						<h2>FitBit API</h2>
+					</header>
+					<p>
+						React app that uses OAuth2 to authorize users to pull data from
+						fitbit api. Serverless AWS(lambda) functions for retreiving authorization authorization/refresh
+						tokens.
+					</p>
+					<p>
+						Has mockdata for guest account.
+					</p>
+
+					<a class="code" target="_blank" href="https://github.com/tdnicola/Fitbit_api">Code</a>
+					<a class="website" target="_blank" href="https://tdnicola.github.io/Fitbit_api/">Website</a>
+				</div>
+				<img class="projectImage" src="./img/fitBitAPI.png" alt="" />
 			</div>
 		</div>
 
-		<div class="profileBio" id="TonyNicola">
-			<div class="profileInfoContainer">
-				<div class="profileBioLeft">
-					<div class="imageBorder">
-						<img
-							src="img/0.jpg"
-							class="profile__portrait"
-							alt="portrait of tony nicola"
-						/>
-					</div>
-				</div>
+		<h3 class="otherProjects">Other Projects</h3>
 
-				<div class="profileBioRight">
-					<h3 class="h3Contact">Hello There!</h3>
+		<!-- Hover over meetup project -->
+		<div class="otherProjects">
+			<div class="containerProject">
+				<img class="image" src="./img/meetup.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>Meetup Mockup</p>
 
-					I am a front-end web developer with a skill for building
-					relationships. I enjoy coding in JavaScript, am experienced in using
-					React, and have recently been learning Python and Gatsby.
-					<p>
-						Having worked closely with companies and business owners for the
-						majority of my career, I bring a uniquely user-centered perspective
-						to every project. I am experienced in collaborating remotely in a
-						team environment as well as working independently.
-					</p>
+						<img src="./img/logos/react-original-wordmark.svg" alt="react logo" />
+						<img src="./img/logos/amazonwebservices-original-wordmark.svg" alt="amazon web service logo" />
+						<br />
 
-					<p>
-						In addition to programming, I enjoy practing Brazillian Jiu Jitsu,
-						weight lifting, pc gaming, and experimenting with home automation
-						using smart home tech.
-					</p>
-					<p>
-						I'm currently looking for employment , if we look like a good match,
-						let's chat.
-					</p>
-					<div class="mediaLinks">
-						<h4>Connect on:</h4>
-						<a
-							href="https://github.com/tdnicola"
-							class="profile_media"
-							target="blank"
-						>
-							<img
-								width="30px"
-								height="30px"
-								src="img/githubWhite.svg"
-								alt="Github logo"
-							/>
-						</a>
-						<a
-							href="https://www.linkedin.com/in/tony-nicola"
-							class="profile_media"
-							target="blank"
-						>
-							<img
-								width="30px"
-								height="30px"
-								src="img/linkedin.svg"
-								alt="linkedin logo"
-							/>
-						</a>
-						<a href="mailto:tdnicola@gmail.com">
-							<img class="emailLogo" src="img/mailicon.png" width="20" />
-							tdnicola@gmail.com
-						</a>
-					</div>
-					<br />
-				</div>
-			</div>
-		</div>
-
-		<section id="portfolio">
-			<h3>Featured Projects</h3>
-			<div class="featuredContainer">
-				<div class="project">
-					<div class="projectInfo card">
-						<header class="project_header">
-							<h2>Healthy Potatoes</h2>
-						</header>
 						<p>
-							MERN stack App for favoriting movies. Uses password hashing for
-							CRUD methods. Allows you to favorite/unfavorite different movies
-							once logged in.
+							Meetup Mockup is a Web Progressive App that uses the meetup API
+							and AWS. Data visualization is displayed where applicable.
 						</p>
-						<p>Sample: username: test, password: test</p>
-
-						<a
-							class="code"
-							target="_blank"
-							href="https://github.com/tdnicola/healthyPotatoes_movieApp"
-							>Code</a
-						>
-						<a
-							class="website"
-							target="_blank"
-							href="https://healthypotatoes.herokuapp.com/"
-							>Website</a
-						>
+						<a class="code" target="_blank" href="https://github.com/tdnicola/meetup">Code</a>
+						<a class="website" target="_blank" href="https://tdnicola.github.io/meetup/">Website</a>
 					</div>
-					<img class="projectImage" src="./img/mern.png" alt="" />
 				</div>
-				<div class="project">
-					<div class="projectInfo card">
-						<header class="project_header">
-							<h2>KanBan Board</h2>
-						</header>
+			</div>
+
+			<!-- Hover over libraryList project -->
+			<div class="containerProject">
+				<img class="image" src="./img/librarylist.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>LibraryLists</p>
+
+						<img src="./img/logos/javascript-original.svg" alt="javascript logo" />
+						<img src="./img/logos/jquery-original-wordmark.svg" alt="jquery logo" />
+						<img src="./img/logos/python-original.svg" alt="python logo" />
+						<br />
+
+						<p>
+							Python web scraper script that uploads to mongoDB. Js/jquery to
+							pull data from api and display library lists.
+						</p>
+						<a class="code" target="_blank" href="https://github.com/tdnicola/libraryList">Code</a>
+						<a class="website" target="_blank" href="https://tdnicola.github.io/libraryList/">Website</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hover over discord project -->
+			<div class="containerProject">
+				<img class="image" src="./img/discord.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>Discord Bot</p>
+
+						<img src="./img/logos/javascript-original.svg" alt="Javascript logo" />
+						<br />
+
+						<p>
+							Small hobby project for a Discord channel that when given commands will either: insult
+							friends, praise friends, random gif, or search for a gif through various APIs. Stores
+							statistics in an PostgreSQL database. Uses OOP and Polymorphism on DB calls.
+						</p>
+						<a class="code" target="_blank" href="https://github.com/tdnicola/discord_insult-bot">Code</a>
+						<a class="website" target="_blank"
+							href="https://discordapp.com/api/oauth2/authorize?client_id=613364681750609943&permissions=0&scope=bot">Server
+							Invite</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hover over React Native website -->
+			<div class="containerProject">
+				<img class="image" src="./img/ChatApp.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>The Chat App</p>
+
+						<img src="./img/logos/react-original-wordmark.svg" alt="React Native logo" />
+
+						<br />
+						<p>
+							React Native app for ios/android that lets you chat with others.
+							Data stored in google firebase.
+						</p>
+						<a class="code" target="_blank"
+							href="https://github.com/tdnicola/React-Native-Chat-App">Code</a>
+						<!-- <a class='website' target='_blank' href=''>Website</a> -->
+					</div>
+				</div>
+			</div>
+
+			<!-- Hover over KanBan project -->
+			<div class="containerProject">
+				<img class="image" src="./img/kanBan.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>KanBan Board</p>
+
+						<img src="./img/logos/javascript-original.svg" alt="javascript logo" />
+						<img src="./img/logos/react-original-wordmark.svg" alt="react logo" />
+						<img src="./img/logos/nodejs-original-wordmark.svg" alt="node logo" />
+						<br />
+
 						<p>
 							MERN stack (MongoDB, Express, React, and Node.js) Drag and drop
-							style Kanban board.
+							style Kanban board. (backend still in progress)
 						</p>
-						<p>
-							Current project, still a WIP. Currently working on mongoose
-							routing for mongoDB.
-						</p>
-						<a
-							class="code"
-							target="_blank"
-							href="https://github.com/tdnicola/kanban-react"
-							>Code</a
-						>
-						<a
-							class="website"
-							target="_blank"
-							href="https://tdnicola.github.io/kanban-react/"
-							>Website</a
-						>
-					</div>
-					<img class="projectImage" src="./img/kanBan.png" alt="" />
-				</div>
-			</div>
-
-			<h3 class="otherProjects">Other Projects</h3>
-			<!-- Hover over meetup project -->
-			<div class="otherProjects">
-				<div class="containerProject">
-					<img class="image" src="./img/meetup.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>Meetup Mockup</p>
-
-							<img
-								src="./img/logos/react-original-wordmark.svg"
-								alt="react logo"
-							/>
-							<img
-								src="./img/logos/amazonwebservices-original-wordmark.svg"
-								alt="amazon web service logo"
-							/>
-							<br />
-
-							<p>
-								Meetup Mockup is a Web Progressive App that uses the meetup API
-								and AWS. Data visualization is displayed where applicable.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/meetup"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://tdnicola.github.io/meetup/"
-								>Website</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<!-- Hover over libraryList project -->
-				<div class="containerProject">
-					<img class="image" src="./img/librarylist.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>LibraryLists</p>
-
-							<img
-								src="./img/logos/javascript-original.svg"
-								alt="javascript logo"
-							/>
-							<img
-								src="./img/logos/jquery-original-wordmark.svg"
-								alt="jquery logo"
-							/>
-							<img src="./img/logos/python-original.svg" alt="python logo" />
-							<br />
-
-							<p>
-								Python web scraper script that uploads to mongoDB. Js/jquery to
-								pull data from api and display library lists.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/libraryList"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://tdnicola.github.io/libraryList/"
-								>Website</a
-							>
-						</div>
-					</div>
-				</div>
-				<!-- Hover over discord project -->
-				<div class="containerProject">
-					<img class="image" src="./img/discord.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>Insult Bot</p>
-
-							<img
-								src="./img/logos/javascript-original.svg"
-								alt="Javascript logo"
-							/>
-							<br />
-
-							<p>
-								Discord bot that when given commands will either: insult
-								friends, praise friends, random gif, or search for a gif through
-								various APIs.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/discord_insult-bot"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://discordapp.com/api/oauth2/authorize?client_id=613364681750609943&permissions=0&scope=bot"
-								>Server Invite</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<!-- Hover over React Native website -->
-				<div class="containerProject">
-					<img class="image" src="./img/ChatApp.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>The Chat App</p>
-
-							<img
-								src="./img/logos/react-original-wordmark.svg"
-								alt="React Native logo"
-							/>
-
-							<br />
-							<p>
-								React Native app for ios/android that lets you chat with others.
-								Data stored in google firebase.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/React-Native-Chat-App"
-								>Code</a
-							>
-							<!-- <a class='website' target='_blank' href=''>Website</a> -->
-						</div>
-					</div>
-				</div>
-
-				<!-- Hover over angular project -->
-				<div class="containerProject">
-					<img class="image" src="./img/angular.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>Angular MMA Quiz</p>
-
-							<img
-								src="./img/logos/angularjs-original.svg"
-								alt="angular logo"
-							/>
-							<br />
-
-							<p>Angular quiz app that tests your knowledge of BJJ or MMA.</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/Angular-Quiz/"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://tdnicola.github.io/Angular-Quiz/"
-								>Website</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<!-- Hover over jQuery website -->
-				<div class="containerProject">
-					<img class="image" src="./img/jquery.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>Pokedex</p>
-
-							<img
-								src="./img/logos/javascript-original.svg"
-								alt="Javascript logo"
-							/>
-							<img
-								src="./img/logos/jquery-original-wordmark.svg"
-								alt="jquery logo"
-							/>
-
-							<br />
-							<p>jQuery website that pulls data from pokeapi.co</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/pokemon-Knowledgebase"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://tdnicola.github.io/pokemon-Knowledgebase/"
-								>Website</a
-							>
-						</div>
+						<a class="code" target="_blank" href="https://github.com/tdnicola/kanban-react">Code</a>
+						<a class="website" target="_blank" href="https://tdnicola.github.io/kanban-react/">Website</a>
 					</div>
 				</div>
 			</div>
-		</section>
 
-		<footer class="profile_footer" id="contact">
-			<hr />
-			<div class="mediaLinksFooter">
-				<h4>Connect on:</h4>
-				<a
-					href="https://github.com/tdnicola"
-					class="profile_media"
-					target="blank"
-				>
-					<img
-						width="30px"
-						height="30px"
-						src="img/githubWhite.svg"
-						alt="Github logo"
-					/>
-				</a>
-				<a
-					href="https://www.linkedin.com/in/tony-nicola"
-					class="profile_media"
-					target="blank"
-				>
-					<img
-						width="30px"
-						height="30px"
-						src="img/linkedin.svg"
-						alt="linkedin logo"
-					/>
-				</a>
-				<a href="mailto:tdnicola@gmail.com">
-					<img class="emailLogo" src="img/mailicon.png" width="20" />
-					tdnicola@gmail.com
-				</a>
+			<!-- Hover over angular project -->
+			<div class="containerProject">
+				<img class="image" src="./img/angular.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>Angular MMA Quiz</p>
+
+						<img src="./img/logos/angularjs-original.svg" alt="angular logo" />
+						<br />
+
+						<p>Angular quiz app that tests your knowledge of BJJ or MMA.</p>
+						<a class="code" target="_blank" href="https://github.com/tdnicola/Angular-Quiz/">Code</a>
+						<a class="website" target="_blank" href="https://tdnicola.github.io/Angular-Quiz/">Website</a>
+					</div>
+				</div>
 			</div>
-		</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
-		<script src="./js/index.js"></script>
-	</body>
+			<!-- Hover over jQuery website -->
+			<div class="containerProject">
+				<img class="image" src="./img/jquery.png" />
+				<!--Hover info-->
+				<div class="middle">
+					<div class="text">
+						<p>Pokedex</p>
+
+						<img src="./img/logos/javascript-original.svg" alt="Javascript logo" />
+						<img src="./img/logos/jquery-original-wordmark.svg" alt="jquery logo" />
+
+						<br />
+						<p>jQuery website that pulls data from pokeapi.co</p>
+						<a class="code" target="_blank"
+							href="https://github.com/tdnicola/pokemon-Knowledgebase">Code</a>
+						<a class="website" target="_blank"
+							href="https://tdnicola.github.io/pokemon-Knowledgebase/">Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="profile_footer" id="contact">
+		<hr />
+		<div class="mediaLinksFooter">
+			<h4>Connect on:</h4>
+			<a href="https://github.com/tdnicola" class="profile_media" target="blank">
+				<img width="30px" height="30px" src="img/githubWhite.svg" alt="Github logo" />
+			</a>
+			<a href="https://www.linkedin.com/in/tony-nicola" class="profile_media" target="blank">
+				<img width="30px" height="30px" src="img/linkedin.svg" alt="linkedin logo" />
+			</a>
+			<a href="mailto:tdnicola@gmail.com">
+				<img class="emailLogo" src="img/mailicon.png" width="20" />
+				tdnicola@gmail.com
+			</a>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
 </html>
