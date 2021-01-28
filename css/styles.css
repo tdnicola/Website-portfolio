@@ -1,22 +1,15 @@
 body {
-	background-color: #1d1b1c;
-	color: white;
-	/* font-family: 'Roboto', sans-serif; */
-	font-family: 'Open Sans', sans-serif;
+	background-color: #f7d344;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 	text-align: center;
 	margin: 0 auto;
 	font-weight: 400;
 }
 
-div.introImg {
-	background: url('../img/computerBackgroundMobile.jpg');
-	height: 100vh;
-	background-size: cover;
-}
-
 hr {
 	width: 75%;
-	/* margin: 20px; */
 	margin: 3em auto;
 	border: 0;
 	height: 1px;
@@ -67,7 +60,8 @@ h2 {
 }
 
 .card {
-	background-color: #4f4f4f;
+	/* background-color: #4f4f4f; */
+	background-color: #e15554;
 	padding: 2rem;
 }
 
@@ -78,10 +72,6 @@ h2 {
 
 .projectImage {
 	width: 100%;
-}
-
-.introText {
-	padding-top: 60vw;
 }
 
 h1 {
@@ -117,7 +107,7 @@ html {
 }
 
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -212,7 +202,7 @@ div.topBottomBordersOut a:hover:after {
 	width: 100%;
 	opacity: 0;
 	transition: 0.5s ease;
-	background-color: #4f4f4f;
+	background-color: #e15554;
 }
 
 .code {
@@ -222,102 +212,15 @@ div.topBottomBordersOut a:hover:after {
 .website {
 	float: right;
 }
-/* TERMINAL */
-/* hidding terminal for mobile */
-.trigger {
-	visibility: hidden;
-}
 
 h4 {
 	font-size: 1.2em;
-}
-/* module terminal */
-.modal {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	visibility: hidden;
-	transform: scale(1.1);
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-	z-index: 5;
-}
-
-.modal-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #4f4f4f;
-	padding: 1rem 1.5rem;
-	height: 75%;
-	width: 75%;
-	border-radius: 0.5rem;
-	z-index: 5;
-	text-align: left;
-}
-
-.close-button {
-	float: right;
-	width: 1.5rem;
-	line-height: 1.5rem;
-	text-align: center;
-	cursor: pointer;
-	border-radius: 0.25rem;
-	background-color: darkgray;
-}
-
-.close-button:hover {
-	background-color: rgb(75, 74, 74);
-}
-
-.show-modal {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1);
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.Terminal {
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.projects {
-	color: #69c2cf;
-}
-
-.cd.projects {
-	color: white;
-}
-
-.projects.ls {
-	color: white;
-}
-
-.file.projects {
-	color: white;
-}
-
-.cat.projects {
-	color: white;
-}
-
-.cat.hidden {
-	opacity: 1;
 }
 
 div .hidden {
 	opacity: 0.5;
 }
 
-.hiddenImg {
-	height: 45%;
-	width: 45%;
-}
 /* portrait picture */
 
 .profile__portrait {
@@ -329,8 +232,6 @@ div .hidden {
 	left: 50%;
 	margin: -150px 0px 0px -150px;
 	filter: gray; /* IE5+ */
-	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-	-webkit-transition: all 0.25s ease-in-out;
 }
 
 .profile__portrait:hover {
@@ -359,8 +260,6 @@ div .hidden {
 .mediaLinks a {
 	padding-left: 20px;
 	filter: gray; /* IE5+ */
-	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-	-webkit-transition: all 0.25s ease-in-out;
 }
 
 .mediaLinksFooter a {
@@ -371,12 +270,6 @@ div .hidden {
 	padding-bottom: 50px;
 }
 
-.profile_media:hover {
-	filter: none;
-	-webkit-filter: grayscale(0);
-	-webkit-transform: scale(1);
-}
-
 .profileBioRight {
 	width: 90%;
 	margin: auto;
@@ -384,16 +277,6 @@ div .hidden {
 }
 
 @media (min-width: 950px) {
-	div.introImg {
-		background: url('../img/computerBackground.jpg');
-		height: 100vh;
-		background-size: cover;
-	}
-
-	.introText {
-		padding-top: 0;
-	}
-
 	.featuredContainer {
 		width: 60%;
 		margin-bottom: 2em;
@@ -457,10 +340,6 @@ div .hidden {
 	}
 	.profileBio {
 		margin-bottom: 10em;
-	}
-	/* Terminal showing */
-	.trigger {
-		visibility: visible;
 	}
 
 	.containerProject {
