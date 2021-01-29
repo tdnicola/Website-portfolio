@@ -23,7 +23,7 @@ hr {
 
 .typing {
 	display: inline-block;
-	font-size: 5vw;
+	font-size: 3vw;
 	letter-spacing: 0.05em;
 	margin: 0 auto;
 	width: auto;
@@ -31,8 +31,8 @@ hr {
 
 h2 {
 	margin-top: 0;
-	letter-spacing: 0.2em;
-	font-size: 1.2em;
+	/* letter-spacing: 0.2em; */
+	font-size: 1.8em;
 }
 
 .featuredContainer {
@@ -60,7 +60,6 @@ h2 {
 }
 
 .card {
-	/* background-color: #4f4f4f; */
 	background-color: #e15554;
 	padding: 2rem;
 }
@@ -76,12 +75,11 @@ h2 {
 
 h1 {
 	margin-top: 0;
-	padding-top: 1em;
-	font-size: 10vw;
+	font-size: 5vw;
 }
 
 h3 {
-	font-size: 2.3em;
+	font-size: 1.2em;
 }
 
 /* nav animations */
@@ -89,21 +87,6 @@ h3 {
 /* smooth-scrolling */
 html {
 	scroll-behavior: smooth;
-}
-
-.navigation-list {
-	list-style-type: none;
-}
-
-.navigation-list li {
-	padding: 10px;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 98%;
-	z-index: 1;
 }
 
 a {
@@ -133,38 +116,9 @@ div.container {
 div.container a {
 	text-decoration: none;
 	font: 20px roboto;
-	/* margin: 0 10px; */
 	padding: 5px;
 	position: relative;
 	cursor: pointer;
-}
-/* Top and Bottom borders go out */
-div.topBottomBordersOut a:before,
-div.topBottomBordersOut a:after {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: white;
-	content: '';
-	opacity: 0;
-	transition: all 0.3s;
-}
-
-div.topBottomBordersOut a:before {
-	top: 0;
-	transform: translateY(10px);
-}
-
-div.topBottomBordersOut a:after {
-	bottom: 0;
-	transform: translateY(-10px);
-}
-
-div.topBottomBordersOut a:hover:before,
-div.topBottomBordersOut a:hover:after {
-	opacity: 1;
-	transform: translateY(0);
 }
 
 /* project hover over modals */
@@ -224,35 +178,16 @@ div .hidden {
 /* portrait picture */
 
 .profile__portrait {
-	position: absolute;
+	border: 5px solid white;
+	margin-top: 15px;
 	border-radius: 50%;
 	height: 300px;
 	width: 300px;
-	top: 50%;
-	left: 50%;
-	margin: -150px 0px 0px -150px;
-	filter: gray; /* IE5+ */
 }
 
-.profile__portrait:hover {
-	filter: none;
-	-webkit-filter: grayscale(0);
-	-webkit-transform: scale(1);
-}
-
-.imageBorder {
-	border: 5px solid white;
-	border-radius: 50%;
-	height: 350px;
-	width: 350px;
-	position: relative;
-	margin: auto;
-}
 /* centering pic */
 .profileBioLeft {
 	margin: auto;
-	padding-top: 2em;
-	width: 90%;
 }
 .mediaLinks {
 	margin-top: 4em;
@@ -318,8 +253,8 @@ div .hidden {
 	}
 
 	.profileInfoContainer {
-		width: 75%;
-		margin: 0 auto;
+		width: 80%;
+		margin: 5em auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -329,7 +264,7 @@ div .hidden {
 	.profileBioLeft {
 		display: inline-block;
 		width: 40%;
-		margin-right: 5em;
+		/* margin-right: 5em; */
 		max-width: 50%;
 	}
 
