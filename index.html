@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Web Developer</title>
+		<title>Data Analyst</title>
 		<link
 			rel="icon"
 			type="image/png"
@@ -16,13 +16,13 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/min.styles.css" />
 		<meta charset="UTF-8" />
 		<!-- Viewport sizing -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
-			content="Tony Nicola, Tony, Nicola, developer, javascript, python, SQL, Data Analyst, Web developer, Portfolio, Remote"
+			content="Tony Nicola, python, developer, javascript, SQL, Data Analyst, Web developer, Portfolio, Remote"
 		/>
 	</head>
 
@@ -55,22 +55,17 @@
 
 				<div class="profileBioRight">
 					<h3 class="h3Contact">Hello There!</h3>
-
-						I am a Data Analyst with a skill for building relationships. I started coding coding in JavaScript. But quickly grew to love Python for it's versitility and vast ability to automate tasks.
+						I am a Data Analyst with a skill for solving problems and building relationships. 
+					<p>	
+						I started "coding" in html with a previous job for a task no one wanted to do. That grew to me learning basic JavaScript. I got was very excited and finished a full stack webdev bootcamp. It took me a whole bootcamp to learn maybe I didn't like web development but I really enjoyed coding. A conundrum...
 					<p>
-						Having worked closely with companies and business owners for the
-						majority of my career, I bring a uniquely user-centered perspective
-						to every project. I am experienced in collaborating remotely in a
-						team environment as well as working independently.
-					</p>
-
+						How can I still code and make my job more effecient? a win win? Python. I quickly grew to love Python for it's versitility and vast ability to automate tasks.
 					<p>
-						In addition to programming, I enjoy practing Brazillian Jiu Jitsu, pc gaming, and experimenting with home automation
-						using smart home tech.
-					</p>
+						Having worked closely with companies and business owners for the majority of my career, I bring a uniquely user-centered perspective to every project. I am experienced in collaborating remotely in a team environment as well as working independently.
 					<p>
-						I'm always looking for opportunities. If we look like a good match,
-						let's chat.
+						In addition to programming, I enjoy practing Brazillian Jiu Jitsu, pc gaming, and experimenting with home automation using smart home tech.
+					<p>
+						I'm always looking for opportunities. If we look like a good match,	let's chat.
 					</p>
 					<div class="mediaLinks">
 						<h4>Connect on:</h4>
@@ -111,33 +106,30 @@
 		<section id="portfolio">
 			<h2>Featured Projects</h2>
 			<div class="featuredContainer">
+
+				<!-- Discord Bot featured project -->
 				<div class="project">
 					<div class="projectInfo card">
 						<header class="project_header">
-							<h2>Healthy Potatoes</h2>
+							<h2>Discord bot</h2>
 						</header>
 						<p>
-							MERN stack App for favoriting movies. Uses password hashing for
-							CRUD methods. Allows you to favorite/unfavorite different movies
-							once logged in.
+							Small hobby project for a Discord channel that when given
+							commands will either: insult friends, praise friends, random
+							gif, search for a gif through various APIs + many others. Stores statistics of bot use in PostgreSQL database. Uses OOP and Polymorphism on DB calls.
 						</p>
-						<p>Sample: username: test, password: test</p>
 
 						<a
 							class="code"
 							target="_blank"
-							href="https://github.com/tdnicola/healthyPotatoes_movieApp"
+							href="https://github.com/tdnicola/discord_insult-bot"
 							>Code</a
 						>
-						<a
-							class="website"
-							target="_blank"
-							href="https://healthypotatoes.herokuapp.com/"
-							>Website</a
-						>
 					</div>
-					<img class="projectImage" src="./img/mern.png" alt="" />
+					<img class="projectImage" src="./img/discord.png" alt="" />
 				</div>
+
+				<!-- Fitbit API -->
 				<div class="project">
 					<div class="projectInfo card">
 						<header class="project_header">
@@ -167,12 +159,77 @@
 					</div>
 					<img class="projectImage" src="./img/fitBitAPI.png" alt="" />
 				</div>
-			</div>
+				
+				<!-- Lib -->
+				<div class="project">
+					<div class="projectInfo card">
+						<header class="project_header">
+							<h2>LibraryLists</h2>
+						</header>
+						<p>
+							Python web scraper script that uploads to mongoDB. Js/jquery to
+							pull data from api and display library lists.
+							<p></p>
+						<a
+							class="code"
+							target="_blank"
+							href="https://github.com/tdnicola/libraryList"
+							>Code</a>
+						<a
+							class="website"
+							target="_blank"
+							href="https://tdnicola.github.io/libraryList/"
+							>Website</a>
+					</div>
+					<img class="projectImage" src="./img/librarylist.png" alt="" />
+				</div>
 
+			</div>
 			<h3 class="otherProjects">Other Projects</h3>
 
 			<!-- Hover over meetup project -->
 			<div class="otherProjects">
+				<div class="containerProject">
+					<img class="image" src="./img/mern.png" />
+					<!--Hover info-->
+					<div class="middle">
+						<div class="text">
+							<p>Healthy Potatoes</p>
+
+							<img
+								class="logo"
+								src="./img/logos/react-original-wordmark.svg"
+								alt="react logo"
+							/>
+							<img
+								class="logo"
+								src="./img/logos/amazonwebservices-original-wordmark.svg"
+								alt="amazon web service logo"
+							/>
+							<br />
+							<p>
+								MERN stack App for favoriting movies. Uses password hashing for	CRUD methods. Allows you to favorite/unfavorite different movies once logged in.
+							</p>
+							<p>
+								Sample: username: test, password: test
+							</p>
+	
+							<a
+								class="code"
+								target="_blank"
+								href="https://github.com/tdnicola/healthyPotatoes_movieApp">
+								Code
+							</a>
+							<a
+								class="website"
+								target="_blank"
+								href="https://github.com/tdnicola/healthyPotatoes_movieApp"
+								>Website</a
+							>
+						</div>
+					</div>
+				</div>
+				
 				<div class="containerProject">
 					<img class="image" src="./img/meetup.png" />
 					<!--Hover info-->
@@ -181,18 +238,19 @@
 							<p>Meetup Mockup</p>
 
 							<img
+								class="logo"
 								src="./img/logos/react-original-wordmark.svg"
 								alt="react logo"
 							/>
 							<img
+								class="logo"
 								src="./img/logos/amazonwebservices-original-wordmark.svg"
 								alt="amazon web service logo"
 							/>
 							<br />
 
 							<p>
-								Meetup Mockup is a Web Progressive App that uses the meetup API
-								and AWS. Data visualization is displayed where applicable.
+								Meetup Mockup is a Web Progressive App that uses the meetup API	and AWS. Data visualization is displayed where applicable.
 							</p>
 							<a
 								class="code"
@@ -210,82 +268,6 @@
 					</div>
 				</div>
 
-				<!-- Hover over libraryList project -->
-				<div class="containerProject">
-					<img class="image" src="./img/librarylist.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>LibraryLists</p>
-
-							<img
-								src="./img/logos/javascript-original.svg"
-								alt="javascript logo"
-							/>
-							<img
-								src="./img/logos/jquery-original-wordmark.svg"
-								alt="jquery logo"
-							/>
-							<img src="./img/logos/python-original.svg" alt="python logo" />
-							<br />
-
-							<p>
-								Python web scraper script that uploads to mongoDB. Js/jquery to
-								pull data from api and display library lists.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/libraryList"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://tdnicola.github.io/libraryList/"
-								>Website</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<!-- Hover over discord project -->
-				<div class="containerProject">
-					<img class="image" src="./img/discord.png" />
-					<!--Hover info-->
-					<div class="middle">
-						<div class="text">
-							<p>Discord Bot</p>
-
-							<img
-								src="./img/logos/javascript-original.svg"
-								alt="Javascript logo"
-							/>
-							<br />
-
-							<p>
-								Small hobby project for a Discord channel that when given
-								commands will either: insult friends, praise friends, random
-								gif, or search for a gif through various APIs. Stores statistics
-								in an PostgreSQL database. Uses OOP and Polymorphism on DB
-								calls.
-							</p>
-							<a
-								class="code"
-								target="_blank"
-								href="https://github.com/tdnicola/discord_insult-bot"
-								>Code</a
-							>
-							<a
-								class="website"
-								target="_blank"
-								href="https://discordapp.com/api/oauth2/authorize?client_id=613364681750609943&permissions=0&scope=bot"
-								>Server Invite</a
-							>
-						</div>
-					</div>
-				</div>
-
 				<!-- Hover over React Native website -->
 				<div class="containerProject">
 					<img class="image" src="./img/ChatApp.png" />
@@ -295,6 +277,7 @@
 							<p>The Chat App</p>
 
 							<img
+								class="logo"	
 								src="./img/logos/react-original-wordmark.svg"
 								alt="React Native logo"
 							/>
@@ -310,7 +293,6 @@
 								href="https://github.com/tdnicola/React-Native-Chat-App"
 								>Code</a
 							>
-							<!-- <a class='website' target='_blank' href=''>Website</a> -->
 						</div>
 					</div>
 				</div>
@@ -324,14 +306,17 @@
 							<p>KanBan Board</p>
 
 							<img
+								class="logo"
 								src="./img/logos/javascript-original.svg"
 								alt="javascript logo"
 							/>
 							<img
+								class="logo"
 								src="./img/logos/react-original-wordmark.svg"
 								alt="react logo"
 							/>
 							<img
+								class="logo"
 								src="./img/logos/nodejs-original-wordmark.svg"
 								alt="node logo"
 							/>
@@ -366,6 +351,7 @@
 							<p>Angular MMA Quiz</p>
 
 							<img
+								class="logo"
 								src="./img/logos/angularjs-original.svg"
 								alt="angular logo"
 							/>
@@ -397,10 +383,12 @@
 							<p>Pokedex</p>
 
 							<img
+								class="logo"
 								src="./img/logos/javascript-original.svg"
 								alt="Javascript logo"
 							/>
 							<img
+								class="logo"
 								src="./img/logos/jquery-original-wordmark.svg"
 								alt="jquery logo"
 							/>
