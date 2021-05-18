@@ -21,8 +21,13 @@ hr {
 	);
 }
 
+/* .typing_container {
+	display: flex;
+	justify-content: center;
+} */
+
 .typing {
-	display: inline-block;
+	/* display: inline-block; */
 	font-size: 3vw;
 	letter-spacing: 0.05em;
 	margin: 0 auto;
@@ -179,12 +184,32 @@ div .hidden {
 
 /* portrait picture */
 
+.imageBorder {
+    position: relative;
+    width: 300px; 
+    max-width: 100%;
+	margin: 0 auto;
+    }
+	
+.imageBorder img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .2s;
+}
+
+.imageBorder:hover img.image-hover {
+      opacity: 1;
+}
+
 .profile__portrait {
 	border: 5px solid white;
 	margin-top: 15px;
 	border-radius: 50%;
-	height: 300px;
-	width: 300px;
 }
 
 /* centering pic */
